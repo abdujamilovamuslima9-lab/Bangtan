@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bangtan</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
@@ -12,13 +13,11 @@
 </head>
 
 <body>
-    <header>BTS Arirang!
-        <div class="home-img">
-            <img src="logo.jpg" alt="bts">
-        </div>
-    </header>
-    <nav>
-        <ul>
+    <container class="overflow-hidden h-dvh">
+    <header ><p class="text-[35px] font-bold text-red-950">BTS Arirang!</p>
+        <div class="bg-[url('logo.jpg')] bg-cover bg-center h-screen">
+             <nav>
+        <ul class="text-white flex gap-[30px] ml-[1300px] text-[25px] pt-[50px]">
             <li><a href="muslima.html">Home</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Products</a></li>
@@ -30,25 +29,27 @@
 
         <i class="bx bx-cart-alt-2" id="cart-icon"></i>
     </div>
+</div>
+    </header>
+    
     <main>
-        <section>
-            <div class="new arrival">
-                <h1>New Arrival of <br>Fresh products</h1>
-            </div>
+        <h1 class="text-[55px] text-red-950 flex ml-[600px] mt-[40px] font-bold">New Arrival of Fresh products</h1>
+        <section class="flex gap-[80px] flex-wrap w-[1800px] ml-[130px] mt-[80px]">
+            
             <article>
-                <img src="cloth1.jpg" alt="jeans">
+                <img src="cloth1.jpg" alt="jeans" class="w-[500px] h-[600px]">
                 <div class="text">
-                    <h3>Jeans</h3>
-                    <span>150$</span>
-                    <button>Purchase now!</button>
+                    <h3 class="font-bold text-[35px]">Jeans</h3>
+                    <span class="font-bold text-[35px]">150$</span>
+                    <button class="bg-purple-600 rounded-xl text-white h-[30px] w-[40px] font-bold">Purchase now!</button>
                 </div>
             </article>
             <article>
-                <img src="cloth2.jpg" alt="">
+                <img src="cloth2.jpg" alt="" class="w-[500px] h-[600px]">
                 <div class="text">
-                    <h3>T-shirt</h3>
-                    <span>50$</span>
-                    <button>Purchase now!</button>
+                    <h3 class="font-bold text-[35px]">T-shirt</h3>
+                    <span class="font-bold text-[35px]">50$</span>
+                    <button class="bg-purple-600 rounded-xl text-white h-[30px] w-[120px] font-bold">Purchase now!</button>
                 </div>
                 <div class="stars">
                     <i class="bx bx-star"></i>
@@ -59,11 +60,11 @@
                 </div>
             </article>
             <article>
-                <img src="cloth3.jpg" alt="">
+                <img src="cloth3.jpg" alt="" class="w-[500px] h-[600px]">
                 <div class="text">
-                    <h3>hanbok</h3>
-                    <span>450$</span>
-                    <button>Purchase now!</button>
+                    <h3 class="font-bold text-[35px]">Hanbok</h3>
+                    <span class="font-bold text-[35px]">450$</span>
+                    <button class="bg-purple-600 rounded-xl text-white h-[30px] w-[120px] font-bold">Purchase now!</button>
                 </div>
                 <div class="stars">
                     <i class="bx bx-star"></i>
@@ -73,15 +74,15 @@
                     <i class="bx bx-star-half"></i>
                 </div>
             </article>
-            <div class="products">
+            <!-- <div class="products">
                 <h1>Jewelleries</h1>
-            </div>
+            </div> -->
             <article>
-                <img src="j5.jpg" alt="">
+                <img src="j5.jpg" alt="" class="w-[500px] h-[600px]">
                 <div class="text">
-                    <h3>"ARMY" Jewellery</h3>
-                    <span>20$</span>
-                    <button>Purchase now!</button>
+                    <h3 class="font-bold text-[35px]">"ARMY" Jewellery</h3>
+                    <span class="font-bold text-[35px]">20$</span>
+                    <button class="bg-purple-600 rounded-xl text-white h-[30px] w-[40px] font-bold">Purchase now!</button>
                 </div>
                 <div class="stars">
                     <i class="bx bx-star"></i>
@@ -92,11 +93,11 @@
                 </div>
             </article>
             <article>
-                <img src="jewellery4.jpg" alt="">
-                <div class="text">
-                    <h1>"Golden by <br>Jungkook</h1>
-                    <span>20$</span>
-                    <button>Purchase now!</button>
+                <img src="jewellery4.jpg" alt="" class="w-[500px] h-[400px]">
+                <div>
+                    <h1 class="font-bold text-[35px]">"Golden by <br>Jungkook</h1>
+                    <span class="font-bold text-[35px]">20$</span>
+                    <button class="bg-purple-600 rounded-xl text-white h-[30px] w-[40px] font-bold">Purchase now!</button>
                 </div>
                 <div class="stars">
                     <i class="bx bx-star"></i>
@@ -107,7 +108,7 @@
                 </div>
             </article>
             <article>
-                <img src="disk.jpg" alt="">
+                <img src="disk.jpg" alt="" class="w-[400px] h-[400px]">
                 <div class="text">
                     <h1> Arirang DVD</h1>
                     <span>15$</span>
@@ -123,11 +124,11 @@
             </article>
         </section>
         <!-- abt bts members briefly data -->
-        <section class="section2">
-            <h1>BTS <span>facts about bts members</span></h1>
-            <div class="article-row">
-                <article class="article2"></article>
-                <img src="jk2.jpg" alt="">
+        <section>
+            <h1 class="text-[55px] text-red-950 flex ml-[600px] mt-[40px] font-bold"> Facts about BTS members</h1>
+               <container class="relative z-10 mx-auto mt-[80px] flex max-w-[1600px] flex-wrap justify-center gap-[80px] border-[2px]">
+                 <article>
+                <img src="jk.jpg" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -137,17 +138,16 @@
                     <div class="stars">
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                </div>
                 <p> September 1, 1997 he was bor in Busan S.Korea.Facts: The "Golden Maknae" earned his
                     nickname for excelling at singing, dancing, drawing, and sports. Scouted by 7
                     agencies
                     after Superstar K, but chose Big Hit because he thought RM was cool.</p>
-                <h2>Jeon Jungkook</h2>
+                <h2 class="font-bold text-[35px]">Jeon Jungkook</h2>
             </div>
             </article>
             </div>
             <article class="article2">
-                <img src="jimin.jpg" alt="">
+                <img src="jimin.jpg" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -163,11 +163,11 @@
                     High School of Arts. Became the first South Korean solo artist to top the Billboard
                     Hot
                     100 with "Like Crazy."</p>
-                <h2>Park Jimin</h2>
+                <h2 class="font-bold text-[35px]">Park Jimin</h2>
                 </div>
             </article>
             <article class="article2">
-                <img src="jhope.jpg" alt="">
+                <img src="jhope.jpg" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -182,11 +182,13 @@
                     with
                     the crew Neuron before joining BTS. First member to headline a major US festival
                     (Lollapalooza).</p>
-                <h2>Jung Hoseok</h2>
+                <h2 class="font-bold text-[35px]">Jung Hoseok</h2>
                 </div>
             </article>
+               </container>
+               <container class="flex gap-[80px] flex-wrap w-[1600px] ml-[130px] mt-[80px] border-[2px] justify-center">
             <article class="article2">
-                <img src="seokjin.jpg" alt="">
+                <img src="seokjin.jpg" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -201,11 +203,11 @@
                     scouted off a public bus while studying acting. Famous for his dad jokes and hosting
                     his
                     live eating stream Eat Jin.</p>
-                <h2>Kim Seokjin</h2>
+                <h2 class="font-bold text-[35px]">Kim Seokjin</h2>
                 </div>
             </article>
             <article class="article2">
-                <img src="rm.png" alt="">
+                <img src="rm.png" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -219,11 +221,11 @@
                 <p>September 12, 1994.He was born in Seoul S.Korea.Has an IQ of 148 and taught himself
                     fluent English by watching Friends. Nicknamed for accidentally breaking things he
                     touches.</p>
-                <h2>Kim Namjoon</h2>
+                <h2 class="font-bold text-[35px]">Kim Namjoon</h2>
                 </div>
             </article>
             <article class="article2">
-                <img src="v.png" alt="">
+                <img src="v.png" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -240,11 +242,11 @@
                     he
                     became the only candidate from his city to pass. Known for his deep baritone voice.
                 </p>
-                <h2>Kim Taehyung</h2>
+                <h2 class="font-bold text-[35px]">Kim Taehyung</h2>
                 </div>
             </article>
             <article class="article2">
-                <img src="suga.jpg" alt="">
+                <img src="suga.jpg" alt="" class="w-[400px]">
                 <div class="stars">
                     <i class="bx bx-star"></i>
                     <i class="bx bx-star"></i>
@@ -260,9 +262,10 @@
                     before BTS. His stage name "Suga" comes from his favorite basketball position,
                     shooting
                     guard.</p>
-                <h2>Min Yoongi</h2>
+                <h2 class="font-bold text-[35px]">Min Yoongi</h2>
                 </div>
             </article>
+               </container>
         </section>
     </main>
     <footer>
@@ -282,9 +285,9 @@
             <div class="footer-box">
                 <h3>Payment method</h3>
                 <div class="payment">
-                    <img src="visa1.png" alt="">
-                    <img src="mastercard1.png" alt="">
-                    <img src="americancard1.png" alt="">
+                    <img src="visa1.png" alt="" class="w-[50px]">
+                    <img src="mastercard1.png" alt="" class="w-[50px]">
+                    <img src="americancard1.png" alt="" class="w-[50px]">
                 </div>
             </div>
             <div class="footer-box">
@@ -296,7 +299,8 @@
                 <p>Don't have account <a href="#">Create one</a></p>
             </div>
     </footer>
-
+</body>
+</container>
 
 
 
